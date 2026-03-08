@@ -1,0 +1,81 @@
+{
+  "name": "lgbm_weekday_slot",
+  "title": "LGBM weekday + slot",
+  "description": "Use only day-of-week and 15-minute slot as the online-safe baseline.",
+  "online_safe": true,
+  "feature_columns": [
+    "weekday",
+    "slot"
+  ],
+  "folds": {
+    "1234-56": {
+      "rmse": 0.3089759597561172,
+      "score": 0.7639559707317434,
+      "train_rows": 11616,
+      "valid_rows": 5856,
+      "train_start": "2024-01-01",
+      "train_end": "2024-04-30 23:45",
+      "valid_start": "2024-05-01",
+      "valid_end": "2024-06-30 23:45"
+    },
+    "2345-67": {
+      "rmse": 0.34800603211088343,
+      "score": 0.7418364429972688,
+      "train_rows": 11616,
+      "valid_rows": 5856,
+      "train_start": "2024-02-01",
+      "train_end": "2024-05-31 23:45",
+      "valid_start": "2024-06-01",
+      "valid_end": "2024-07-31 23:45"
+    },
+    "3456-78": {
+      "rmse": 0.5688093970474191,
+      "score": 0.637426064557015,
+      "train_rows": 11712,
+      "valid_rows": 5952,
+      "train_start": "2024-03-01",
+      "train_end": "2024-06-30 23:45",
+      "valid_start": "2024-07-01",
+      "valid_end": "2024-08-31 23:45"
+    },
+    "4567-89": {
+      "rmse": 0.342585738938705,
+      "score": 0.7448313884150787,
+      "train_rows": 11712,
+      "valid_rows": 5856,
+      "train_start": "2024-04-01",
+      "train_end": "2024-07-31 23:45",
+      "valid_start": "2024-08-01",
+      "valid_end": "2024-09-30 23:45"
+    },
+    "5678-910": {
+      "rmse": 0.31589288171012103,
+      "score": 0.7599402762179321,
+      "train_rows": 11808,
+      "valid_rows": 5856,
+      "train_start": "2024-05-01",
+      "train_end": "2024-08-31 23:45",
+      "valid_start": "2024-09-01",
+      "valid_end": "2024-10-31 23:45"
+    }
+  },
+  "score_summary": {
+    "avg_score": 0.7295980285838077,
+    "min_score": 0.637426064557015,
+    "max_score": 0.7639559707317434,
+    "std_score": 0.046858564151694586
+  },
+  "top_features": [
+    {
+      "feature": "slot",
+      "importance": 9287
+    },
+    {
+      "feature": "weekday",
+      "importance": 2713
+    }
+  ],
+  "submission_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot/submission.csv",
+  "report_json_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot/report.json",
+  "report_md_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot/report.md"
+}

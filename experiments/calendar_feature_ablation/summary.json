@@ -1,0 +1,52 @@
+{
+  "baseline_experiment": "lgbm_weekday_slot",
+  "best_experiment": "lgbm_weekday_slot_is_non_workday",
+  "ranking": [
+    {
+      "name": "lgbm_weekday_slot_is_non_workday",
+      "title": "LGBM weekday + slot + is_non_workday",
+      "feature_columns": [
+        "weekday",
+        "slot",
+        "is_non_workday"
+      ],
+      "avg_score": 0.7299510018249838,
+      "delta_vs_baseline": 0.0003529732411761133,
+      "submission_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot_is_non_workday/submission.csv",
+      "report_json_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot_is_non_workday/report.json",
+      "report_md_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot_is_non_workday/report.md"
+    },
+    {
+      "name": "lgbm_weekday_slot",
+      "title": "LGBM weekday + slot",
+      "feature_columns": [
+        "weekday",
+        "slot"
+      ],
+      "avg_score": 0.7295980285838077,
+      "delta_vs_baseline": 0.0,
+      "submission_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot/submission.csv",
+      "report_json_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot/report.json",
+      "report_md_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot/report.md"
+    },
+    {
+      "name": "lgbm_slot_is_non_workday",
+      "title": "LGBM slot + is_non_workday",
+      "feature_columns": [
+        "slot",
+        "is_non_workday"
+      ],
+      "avg_score": 0.5663096241487231,
+      "delta_vs_baseline": -0.16328840443508463,
+      "submission_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_slot_is_non_workday/submission.csv",
+      "report_json_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_slot_is_non_workday/report.json",
+      "report_md_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_slot_is_non_workday/report.md"
+    }
+  ],
+  "conclusion": {
+    "best_experiment": "lgbm_weekday_slot_is_non_workday",
+    "best_avg_score": 0.7299510018249838,
+    "weekday_slot_to_weekday_slot_is_non_workday": 0.0003529732411761133,
+    "weekday_slot_to_slot_is_non_workday": -0.16328840443508463
+  }
+}

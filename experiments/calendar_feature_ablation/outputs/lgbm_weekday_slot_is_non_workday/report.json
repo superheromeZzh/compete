@@ -1,0 +1,86 @@
+{
+  "name": "lgbm_weekday_slot_is_non_workday",
+  "title": "LGBM weekday + slot + is_non_workday",
+  "description": "Add a 2024 China non-workday flag on top of weekday and slot.",
+  "online_safe": true,
+  "feature_columns": [
+    "weekday",
+    "slot",
+    "is_non_workday"
+  ],
+  "folds": {
+    "1234-56": {
+      "rmse": 0.310651014809855,
+      "score": 0.7629796099040725,
+      "train_rows": 11616,
+      "valid_rows": 5856,
+      "train_start": "2024-01-01",
+      "train_end": "2024-04-30 23:45",
+      "valid_start": "2024-05-01",
+      "valid_end": "2024-06-30 23:45"
+    },
+    "2345-67": {
+      "rmse": 0.3620883256377339,
+      "score": 0.7341667799199417,
+      "train_rows": 11616,
+      "valid_rows": 5856,
+      "train_start": "2024-02-01",
+      "train_end": "2024-05-31 23:45",
+      "valid_start": "2024-06-01",
+      "valid_end": "2024-07-31 23:45"
+    },
+    "3456-78": {
+      "rmse": 0.5690745493580965,
+      "score": 0.6373183482002795,
+      "train_rows": 11712,
+      "valid_rows": 5952,
+      "train_start": "2024-03-01",
+      "train_end": "2024-06-30 23:45",
+      "valid_start": "2024-07-01",
+      "valid_end": "2024-08-31 23:45"
+    },
+    "4567-89": {
+      "rmse": 0.33580994067981734,
+      "score": 0.7486094911758796,
+      "train_rows": 11712,
+      "valid_rows": 5856,
+      "train_start": "2024-04-01",
+      "train_end": "2024-07-31 23:45",
+      "valid_start": "2024-08-01",
+      "valid_end": "2024-09-30 23:45"
+    },
+    "5678-910": {
+      "rmse": 0.30432381531483765,
+      "score": 0.766680779924746,
+      "train_rows": 11808,
+      "valid_rows": 5856,
+      "train_start": "2024-05-01",
+      "train_end": "2024-08-31 23:45",
+      "valid_start": "2024-09-01",
+      "valid_end": "2024-10-31 23:45"
+    }
+  },
+  "score_summary": {
+    "avg_score": 0.7299510018249838,
+    "min_score": 0.6373183482002795,
+    "max_score": 0.766680779924746,
+    "std_score": 0.047721454458676496
+  },
+  "top_features": [
+    {
+      "feature": "slot",
+      "importance": 8616
+    },
+    {
+      "feature": "weekday",
+      "importance": 2766
+    },
+    {
+      "feature": "is_non_workday",
+      "importance": 618
+    }
+  ],
+  "submission_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot_is_non_workday/submission.csv",
+  "report_json_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot_is_non_workday/report.json",
+  "report_md_path": "/Users/z/基于多源数据融合的电动汽车充电协同优化挑战/experiments/calendar_feature_ablation/outputs/lgbm_weekday_slot_is_non_workday/report.md"
+}
